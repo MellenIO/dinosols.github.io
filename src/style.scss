@@ -1,0 +1,57 @@
+@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap');
+
+@import './theme/variables';
+//$navbar-background-color: $purple-dark;
+$title-family: 'Bebas Neue', sans-serif;
+$title-weight: 400;
+$subtitle-family: $title-family;
+$subtitle-weight: $title-weight;
+@import '../node_modules/bulma/bulma';
+@import './theme/overrides';
+@import '../node_modules/bulma-timeline/src/sass/index';
+
+.card {
+  border: 0;
+
+  .card-image {
+    img {
+      border-radius: 0.4em;
+    }
+  }
+}
+
+@media (max-width: $tablet) {
+  .columns.is-reverse-mobile {
+    flex-direction: column-reverse;
+  }
+}
+
+.logo-image img {
+  border-radius: 50%;
+}
+
+.navbar-brand .logo-image {
+  width: 40px;
+  height: 40px;
+  img {
+    max-height: 40px;
+  }
+}
+
+.timeline {
+  .timeline-item {
+    .timeline-content {
+      .heading {
+        font-family: $title-family;
+        font-weight: $title-weight;
+        font-size: 1.2rem;
+      }
+    }
+  }
+}
+
+.content {
+  h3 {
+    font-weight: $title-weight;
+  }
+}
