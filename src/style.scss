@@ -55,3 +55,24 @@ $subtitle-weight: $title-weight;
     font-weight: $title-weight;
   }
 }
+
+.hero div.big-dino {
+  width: 50vw;
+}
+
+@include until($desktop) {
+  .hero div.big-dino {
+    width: 100vw;
+  }
+}
+
+.hero h1.title {
+  font-size: 5rem;
+}
+
+@include from($desktop) {
+  .hero h1.title {
+    font-size: 10rem;
+  }
+}
+
