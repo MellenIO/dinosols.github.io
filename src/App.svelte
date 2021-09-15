@@ -4,6 +4,7 @@
 	import Section from './Components/Section.svelte';
 	import Hero from './Components/Hero.svelte';
 	import TeamMember from './Components/TeamMember.svelte';
+	import Footer from './Components/Footer.svelte';
 </script>
 
 <Navbar>
@@ -40,7 +41,7 @@
 	Recently in the Dinosol Laboratory, our Scientists made a breakthrough never seen before… they’ve established a process to raise Dinosaurs from the grave and bring them back as new beasts: Dinosols. Our Paleontologists and Head Biologist have collected fossilized mosquitoes in amber, sequenced their genomes, and now plan to patch their missing DNA with visionary ideas to bring unique and rare Dinosols to life. Dinosols will be a new NFT roaring it’s way to the Solana blockchain soon!
 </Section>
 
-<Section id="dinosols" title="Our Dinosols" classes="is-small alternate">
+<Section id="dinosols" classes="is-small alternate">
 	<div class="columns is-multiline is-mobile">
 		<div class="column is-one-quarter-tablet is-half-mobile">
 			<div class="card">
@@ -184,6 +185,8 @@
 		</div>
 	</div>
 </Section>
+
+<Footer />
 
 <style lang="scss">
 

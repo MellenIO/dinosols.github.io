@@ -6,7 +6,9 @@
 
 <section class="section {classes}" id={id}>
 	<div class="container">
+		{#if title}
 		<h2 class="title">{title}</h2>
+		{/if}
 		<slot></slot>
 	</div>
 </section>

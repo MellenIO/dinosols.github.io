@@ -23,6 +23,7 @@
 			<div class="columns is-vcentered is-reverse-mobile">
 				<div class="column is-half-desktop">
 					<h1 class="title">Dinosols NFT</h1>
+					<p class="subtitle">(We are currently trying to come up with a tagline)</p>
 				</div>
 			</div>
 		</div>
