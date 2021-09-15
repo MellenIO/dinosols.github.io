@@ -30,7 +30,8 @@ $subtitle-weight: $title-weight;
   border-radius: 50%;
 }
 
-.navbar-brand .logo-image {
+.navbar-brand .logo-image,
+.footer .logo-image {
   width: 40px;
   height: 40px;
   img {
@@ -60,6 +61,13 @@ $subtitle-weight: $title-weight;
   width: 50vw;
 }
 
+// fix issues with hero acting strange on iphone 12?
+@include until($desktop) {
+  .hero {
+    margin-top: -4rem;
+  }
+}
+
 @include until($desktop) {
   .hero div.big-dino {
     width: 100vw;
@@ -76,3 +84,13 @@ $subtitle-weight: $title-weight;
   }
 }
 
+
+.hero p.subtitle {
+  font-size: 1.5rem;
+}
+
+@include from($desktop) {
+  .hero p.subtitle {
+    font-size: 2rem;
+  }
+}
