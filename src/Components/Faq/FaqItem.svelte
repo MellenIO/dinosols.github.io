@@ -1,5 +1,5 @@
 <script>
-	let toggled;
+	export let toggled = false;
 	function toggleFaqItem() {
 	    toggled = !toggled;
 	}

@@ -6,7 +6,7 @@
 
 <Section id="faq" title="FAQ" classes="is-small alternate">
 	{#each faq as item}
-		<FaqItem title={item.title}>
+		<FaqItem title={item.title} toggled={item.toggled || false}>
 			{@html item.content}
 		</FaqItem>
 	{/each}
