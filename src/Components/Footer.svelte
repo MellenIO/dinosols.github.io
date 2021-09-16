@@ -1,5 +1,5 @@
 <script>
-
+	import { socials } from '../lib/stores';
 </script>
 
 <footer class="footer">
@@ -9,7 +9,11 @@
 				<figure class="image is-square logo-image">
 					<img src="./images/logo.png" />
 				</figure>
-				<div class="icons"><a href="https://twitter.com/dinosolsnft" class="twitter" target="_blank"><i class="fab fa-twitter"></i></a><a href="https://twitter.com/dinosolsnft" class="discord" target="_blank"><i class="fab fa-discord"></i></a></div>
+				<div class="icons">
+					{#each socials as social}
+						<a href={social.link} class={social.name.toLowerCase()} target="_blank"><i class="fab {social.icon}"></i></a>
+					{/each}
+				</div>
 
 			</div>
 			<div class="column is-half">
@@ -29,7 +33,8 @@
 
 	  .icons {
 		padding-top: 1.2em;
-		font-size: 1.4em;
+        font-size: 1.4em;
+
 		a {
           color: white;
 

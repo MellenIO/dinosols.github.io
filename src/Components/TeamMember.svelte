@@ -21,3 +21,9 @@
 		</div>
 	</div>
 </div>
+
+<style lang="scss">
+	.card {
+	  background-color: #1f2424;
+	}
+</style>

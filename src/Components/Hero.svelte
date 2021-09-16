@@ -1,5 +1,6 @@
 <script>
-
+	export let title;
+	export let subtitle;
 </script>
 
 <section class="hero is-fullheight">
@@ -22,8 +23,8 @@
 		<div class="container">
 			<div class="columns is-vcentered is-reverse-mobile">
 				<div class="column is-half-desktop">
-					<h1 class="title">Dinosols NFT</h1>
-					<p class="subtitle">(We are currently trying to come up with a tagline)</p>
+					<h1 class="title">{title}</h1>
+					<p class="subtitle">{subtitle}</p>
 				</div>
 			</div>
 		</div>
@@ -38,6 +39,9 @@
 <style lang="scss">
   @import '../theme/_variables.scss';
   .hero {
+	.title {
+	  text-decoration: underline;
+	}
 	background-color: $purple;
 	position: relative;
 	.big-dino {
