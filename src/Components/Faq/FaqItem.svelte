@@ -1,17 +1,12 @@
 <script>
-	export let toggled = false;
-	function toggleFaqItem() {
-	    toggled = !toggled;
-	}
 
 	export let title;
 </script>
 
-<article class="accordion" class:is-active={toggled}>
-	<div class="accordion-header" on:click={() => toggleFaqItem()}>
+<article class="accordion is-active">
+	<div class="accordion-header">
 		<p class="title">
 			{title}
-			<i class="fas" class:fa-chevron-up={toggled} class:fa-chevron-down={!toggled}></i>
 		</p>
 
 	</div>
@@ -25,7 +20,6 @@
 	padding-bottom: 2rem;
 
 	.accordion-header {
-	  cursor: pointer;
 	  i {
 		padding-left: 1rem;
 	  }
