@@ -79,8 +79,7 @@ export const teamMembers = [
 export const faq = [
     {
         title: 'Dinosol?',
-        content: 'A Dinosol is an NFT on the Solana blockchain that will be a collection of randomly-generated images based on various Dinosols, genes, and accessories.',
-        toggled: true
+        content: 'A Dinosol is an NFT on the Solana blockchain that will be a collection of randomly-generated images based on various Dinosols, genes, and accessories.'
     },
     {
         title: 'Wen launch?',
